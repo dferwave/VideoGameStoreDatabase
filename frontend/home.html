@@ -1,37 +1,27 @@
 <!DOCTYPE html>
-    <html>
-    <style>
-       
-    </style>
- <head>
+<html>
+<style>
+    
+</style>
+<head>
     <title>POINT OF SALE SYSTEM FOR A VIDEO GAME STORE</title>
 </head>
 <body>
-  <form action="results.html" method="GET">
-
-    <div>
-      <label>Member ID
-      <input type="text" name="Member ID">
-      </label>
-
-    </div>
-
-
-    <div>
-      <label>Password
-      <input type="password" name="Password">
-    </label>
-    </div>
-
-  
-
-  <button type="submit"> submit</button>
-
-  </form>    
-
-<h1>THE GAMES</h1>
-<p>Find all your favorite games</p>
-
+    <h1>THE GAMES</h1>
+    <p>Find all your favorite games</p>
+    
+    <!--Login Form:-->
+    <form action="results.html" method="GET">
+        <div>
+          <label for="user">Member ID</label>
+          <input type="text" name="user" id="user" placeholder="Username">
+        </div>
+        <div>
+          <label for="pass">Password</label>
+          <input type="password" name="password" id="password">
+        </div>
+        <input type="submit" value="Submit">
+    </form>
 </body>
 
 </html>
