@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+    <html>
+    <style>
+       
+    </style>
+ <head>
+    
+</head>
+<body>
+  <h1>Signup</h1>
+  <form action="#" method="GET" >
+
+    <div >
+      <label>Member-ID:
+      <input type="text" name="Member ID" id="Member">
+      </label>
+
+    </div>
+<br>
+ <div >
+      <label>Password:
+      <input type="password" name="Password" id="password">
+</label>
+    </div>
+<br>
+     <div >
+      <label>RepeatPassword:
+      <input type="password" name="Member ID" id="password">
+      </label>
+
+    </div>
+
+
+  <button type="signup" onclick="validate()"  style="margin: 20px">Login</button>
+ 
+  </form>    
+
+</body>
+
+</html>
+<script>
+        function validate() {
+            var useremail = document.getElementById("Member").value;
+            var password = document.getElementById("password").value;
+            if (useremail == null || useremail == "") {
+                alert("Please enter the username.");
+                return false;
+            }
+            if (password == null || password == "") {
+                alert("Please enter the password.");
+                return false;
+            }
+            alert('Signup successful');
+            
+        } 
+</script>

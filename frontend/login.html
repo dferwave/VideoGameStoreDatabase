@@ -4,30 +4,39 @@
        
     </style>
  <head>
-    <title>POINT OF SALE SYSTEM FOR A VIDEO GAME STORE</title>
+    
 </head>
 <body>
-  <form action="results.html" method="GET" >
+  <h1>Login</h1>
+  <form action="#" method="GET" >
 
+    <div >
+      <label>Member-ID:
+      <input type="text" name="Member ID" id="Member">
+      </label>
 
-  
-  <a href="signup.html" style="margin: 20px;margin-left:  20px">Sign Up</a>
-  
-  <a href="login.html" style="margin: 20px;margin-left:  20px">Login</a>
+    </div>
+<br>
+ <div >
+      <label>Password:
+      <input type="password" name="Password" id="password">
+</label>
+    </div>
+<br>
+     
 
+  <button type="submit" onclick="validate()"  style="margin: 20px">Signup</button>
+ 
   </form>    
-
-<h1>THE GAMES</h1>
-<p>Find all your favorite games</p>
 
 </body>
 
 </html>
 <script>
         function validate() {
-            var username = document.getElementById("Member").value;
+            var useremail = document.getElementById("Member").value;
             var password = document.getElementById("password").value;
-            if (username == null || username == "") {
+            if (useremail == null || useremail == "") {
                 alert("Please enter the username.");
                 return false;
             }
@@ -36,24 +45,6 @@
                 return false;
             }
             alert('Login successful');
-}
-
-
-
+            
+        } 
 </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
