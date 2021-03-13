@@ -1,59 +1,36 @@
 <!DOCTYPE html>
-    <html>
-    <style>
-       
-    </style>
- <head>
-    <title>POINT OF SALE SYSTEM FOR A VIDEO GAME STORE</title>
+<html>
+<style>
+
+</style>
+<script>
+  function validate() {
+    var username = document.getElementById("Member").value;
+    var password = document.getElementById("password").value;
+    if (username === null || username === "") {
+      alert("Please enter the username.");
+      return false;
+    }
+    if (password === null || password === "") {
+      alert("Please enter the password.");
+      return false;
+    }
+    alert('Login successful');
+  }
+</script>
+<head>
+  <title>Point of Sale System - Video Game Store</title>
 </head>
 <body>
-  <form action="results.html" method="GET" >
+  <!--<form action="results.html" method="GET" > Why were these links in a form?-->
+  <nav> <!--Should be in a "NavBar" (using CSS)-->
+    <a href="signup.html" style="margin: 20px"><button>Sign Up</button></a>
+    <a href="login.html" style="margin: 20px"><button>Login</button></a>
+  </nav>
+  <!--</form>-->  
 
-
-  
-  <a href="signup.html" style="margin: 20px;margin-left:  20px">Sign Up</a>
-  
-  <a href="login.html" style="margin: 20px;margin-left:  20px">Login</a>
-
-  </form>    
-
-<h1>THE GAMES</h1>
-<p>Find all your favorite games</p>
+  <h1>THE GAMES</h1>
+  <p>Find all your favorite games</p>
 
 </body>
-
 </html>
-<script>
-        function validate() {
-            var username = document.getElementById("Member").value;
-            var password = document.getElementById("password").value;
-            if (username == null || username == "") {
-                alert("Please enter the username.");
-                return false;
-            }
-            if (password == null || password == "") {
-                alert("Please enter the password.");
-                return false;
-            }
-            alert('Login successful');
-}
-
-
-
-</script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

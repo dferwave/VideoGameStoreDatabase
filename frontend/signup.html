@@ -1,56 +1,58 @@
 <!DOCTYPE html>
-    <html>
-    <style>
-       
-    </style>
- <head>
-    
+<html>
+<style>
+
+</style>
+<script>
+  function validate() {
+    var username = document.getElementById("Member").value;
+    var password = document.getElementById("password").value;
+    var pswdConfirm = document.getElementById("passwordConfirm").value;
+    if (username === null || username === "") {
+      alert("Please enter the username.");
+      return false; //Look into .preventDefault() method so the form isn't submitted
+    }
+    if (password === null || password === "") {
+      alert("Please enter the password.");
+      return false; //Look into .preventDefault() method so the form isn't submitted
+    }
+    if(password !== pswdConfirm) {
+      alert("Passwords must match.");
+      return false; //Look into .preventDefault() method so the form isn't submitted
+    }
+    alert('Signup successful');
+    //After signing up, it should lead you back to the Home or Login page
+  } 
+</script>
+<head>
+    <title>Registration</title>
 </head>
 <body>
+  <nav> <!--Should be in a "NavBar" (using CSS)-->
+    <a href="home.html" style="margin: 20px"><button>Home</button></a>
+    <a href="login.html" style="margin: 20px"><button>Login</button></a>
+  </nav>
   <h1>Signup</h1>
   <form action="#" method="GET" >
-
-    <div >
-      <label>Member-ID:
-      <input type="text" name="Member ID" id="Member">
+    <div>
+      <label>Member ID:
+      <input type="text" name="memberID" id="member" required>
       </label>
-
     </div>
-<br>
- <div >
+    <br> <!--Shouldn't have to use <br> after adding CSS-->
+    <div>
       <label>Password:
-      <input type="password" name="Password" id="password">
-</label>
-    </div>
-<br>
-     <div >
-      <label>RepeatPassword:
-      <input type="password" name="Member ID" id="password">
+      <input type="password" name="password" id="password" required>
       </label>
-
     </div>
-
-
-  <button type="signup" onclick="validate()"  style="margin: 20px">Login</button>
- 
-  </form>    
-
+    <br>
+    <div>
+      <label>Confirm Password:
+      <input type="password" name="passwordConfirm" id="passwordConfirm" required>
+      </label>
+    </div>
+    <button type="submit" onclick="validate()" style="margin: 20px">Sign Up</button>
+    <!--Submit button should be Larger and have a Color (Probably blue or green)-->
+  </form>
 </body>
-
 </html>
-<script>
-        function validate() {
-            var useremail = document.getElementById("Member").value;
-            var password = document.getElementById("password").value;
-            if (useremail == null || useremail == "") {
-                alert("Please enter the username.");
-                return false;
-            }
-            if (password == null || password == "") {
-                alert("Please enter the password.");
-                return false;
-            }
-            alert('Signup successful');
-            
-        } 
-</script>
