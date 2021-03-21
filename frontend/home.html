@@ -1,36 +1,58 @@
-<!DOCTYPE html>
-<html>
-<style>
+{%extends "index.html"%}
 
-</style>
-<script>
-  function validate() {
-    var username = document.getElementById("Member").value;
-    var password = document.getElementById("password").value;
-    if (username === null || username === "") {
-      alert("Please enter the username.");
-      return false;
-    }
-    if (password === null || password === "") {
-      alert("Please enter the password.");
-      return false;
-    }
-    alert('Login successful');
-  }
-</script>
+{% block content%}
 <head>
-  <title>Point of Sale System - Video Game Store</title>
+    <title>Login and Registration Form</title>
+    <link rel="stylesheet" href="static/css/home.css">
 </head>
-<body>
-  <!--<form action="results.html" method="GET" > Why were these links in a form?-->
-  <nav> <!--Should be in a "NavBar" (using CSS)-->
-    <a href="signup.html" style="margin: 20px"><button>Sign Up</button></a>
-    <a href="login.html" style="margin: 20px"><button>Login</button></a>
-  </nav>
-  <!--</form>-->  
 
-  <h1>THE GAMES</h1>
-  <p>Find all your favorite games</p>
+<script>
+    function validate() {
+      var username = document.getElementByName("emailRegister").value;
+      var password = document.getElementByName("passwordRegister").value;
+      var pswdConfirm = document.getElementByName("passwordConfirm").value;
+      if (username === null || username === "") {
+        alert("Please enter Email.");
+        return false; //Look into .preventDefault() method so the form isn't submitted
+      }
+      if (password === null || password === "") {
+        alert("Please enter the password.");
+        return false; //Look into .preventDefault() method so the form isn't submitted
+      }
+      if(password !== pswdConfirm) {
+        alert("Passwords must match.");
+        return false; //Look into .preventDefault() method so the form isn't submitted
+      }
+      alert('Signup successful');
+      //After signing up, it should lead you back to the Home or Login page
+    } 
+  </script>
+<nav> <!--Should be in a "NavBar" (using CSS)-->
+    <a href="home.html" style="margin: 20px"><button>Home</button></a>
 
-</body>
-</html>
+
+</nav>
+<div class="home-page">
+    <div class="form">
+        <form class ="register-form" action="#" method="POST">
+            <input type="text" name="fname" placeholder="First Name" required>
+            <input type="text" name="lname" placeholder="Last Name" required>
+            <input type="email" name="emailRegister" placeholder="Email" required>
+            <input type="password" name="passwordRegister" placeholder="Password" required>
+            <input type="password" name="passwordConfirm" placeholder="Confirm Password" required>
+            <input type="number" name="phone" placeholder="phone" required>
+            <button type="submit" >Register</button>
+            <p class="message">Already Registered? <a href="#">Login</a></p>
+        </form>
+        
+        <form class="login-form" action="#" method="POST">
+            <input type="email" placeholder="Email" name="emailLogin" required>
+            <input type="password" placeholder="Password" name="passwordLogin" required>
+            <button type="submit">Login</button>
+            <p class="message">Not Registered? <a href="#">Register</a></p>
+        </form>
+    </div>
+
+</div>
+
+{%endblock%}
