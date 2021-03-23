@@ -161,6 +161,7 @@ CREATE TABLE `CUSTOMER_ORDER_ITEM`(
     `order_id` INT  NOT NULL,
     `product_id` INT NOT NULL,
     `quantity` INT NOT NULL,
+    `unit_price` INT NOT NULL,
     `deal_code` varchar(25),
     `sub_total` double NOT NULL,
     
