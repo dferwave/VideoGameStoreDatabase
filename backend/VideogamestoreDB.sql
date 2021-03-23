@@ -136,7 +136,6 @@ CREATE TABLE `DEAL`(
 	`deal_id` INT NOT NULL auto_increment,
     `product_id` int NOT NULL,
     `deal_code` varchar(25) NOT NULL,
-    `is_deal_percent` BOOL NOT NULL,
     `deal_percent_off` INT,
     `deal_price_off` double,
     `discounted_unit_price` double NOT NULL,
