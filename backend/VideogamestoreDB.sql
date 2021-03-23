@@ -1,5 +1,5 @@
-CREATE SCHEMA IF NOT EXISTS Videogamestore;
-Use `Videogamestore`;
+CREATE SCHEMA IF NOT EXISTS `Videogamestore`;
+USE `Videogamestore`;
 
 CREATE TABLE `MEMBER`(
     `member_id` int NOT NULL AUTO_INCREMENT,
