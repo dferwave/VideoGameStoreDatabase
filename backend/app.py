@@ -1,47 +1,39 @@
-from flask import Flask,render_template,request,redirect,url_for
-from server.server import con
-from  mysql.connector import MySQLConnection
-from passlib.hash import pbkdf2_sha256
+from flask import Flask,render_template
+import mysql.connector
+
+
+db = mysql.connector.connect(  #This function connects to mySQL DB
+        host="localhost", 
+        user="root",
+        passwd="123456789", # the password you set for the DB
+        database="online_store" #name of the local DB
+    )
+print("connected successfully....")
+mycursor = db.cursor(buffered=True)
 
 app = Flask(__name__)
+#################################################################
+from user import routes
 
 @app.route("/", methods=['GET','POST'])
 def home():   # This is the only function the works as of March 21, 2021. It gets the data from the register form and enter into the database
-    if request.method == 'POST':
-        fname =request.form['fname']
-        lname=request.form['lname']
-        email=request.form["emailRegister"]
-        password=request.form['passwordRegister']
-        passwordConfirm=request.form['passwordConfirm']
-        phone=request.form['phone']
-        
-        pw = pbkdf2_sha256.encrypt(password)
-        con(fname,lname,phone,email)
-        return redirect(url_for("user",user = fname)) if password==passwordConfirm else redirect(url_for("home"))
-    else:
         return render_template("home.html")
 
-@app.route("/signup/")
-def sign_up():
-    return render_template("signup.html")
-   
-@app.route("/login/", methods=['GET','POST'])
-def login():
-        return render_template("login.html")
+@app.route("/user/") # user home page when logged in
+def user():
+    return render_template("user.html")
 
-@app.route("/home/<user>/") # user home page when logged in
-def user(user):
-    return f"<h1>{user}</h1>"
-
-@app.route("/admin/<user>/")
+@app.route("/admin/")
 def admin(admin):
     return render_template("admin.html")
 
-@app.route("/admin/dashboard/") # this routes takes whoever is logged in as an admin to the dashboard
+@app.route("/dashboard/") # this routes takes whoever is logged in as an admin to the dashboard
 def dashboard(admin):
     return render_template("admin/dashboard.html")
 
-
+@app.route("/cart/", methods=['GET','POST'])
+def cart():
+    return render_template("cart.html")
     
 if __name__ == "__main__":
     app.run(debug=True)
