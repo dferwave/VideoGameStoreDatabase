@@ -1,0 +1,552 @@
+{%extends "index.html"%}
+
+{% block content%}
+
+    <body class="cart checkout">
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        <!-- header-area-start -->
+		
+        <!-- header-area-end -->
+		<!-- breadcrumbs-area-strat -->
+		<div class="breadcrumbs-area">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="breadcrumbs-menu">
+							<ul>
+								<li><a href="#">Home<i class="fa fa-angle-right"></i></a></li>
+								<li><a href="#" class="active">checkout</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- breadcrumbs-area-end -->
+		<!-- entry-header-area-start -->
+		<div class="entry-header-area pt-80">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="entry-header-title">
+							<h2>Checkout</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- entry-header-area-end -->
+		<!-- coupon-area-area-start -->
+		<div class="coupon-area">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="coupon-accordion">
+							<h3>Returning customer? <span id="showlogin">Click here to login</span></h3>
+							<div class="coupon-content" id="checkout-login">
+								<div class="coupon-info">
+									<p class="coupon-text">Quisque gravida turpis sit amet nulla posuere lacinia. Cras sed est sit amet ipsum luctus.</p>
+									<form action="#">
+										<p class="form-row-first">
+											<label>Username or email <span class="required">*</span></label>
+											<input type="text">
+										</p>
+										<p class="form-row-last">
+											<label>Password  <span class="required">*</span></label>
+											<input type="text">
+										</p>
+										<p class="form-row">					
+											<input type="submit" value="Login">
+											<label>
+												<input type="checkbox">
+												 Remember me 
+											</label>
+										</p>
+										<p class="lost-password">
+											<a href="#">Lost your password?</a>
+										</p>
+									</form>
+								</div>
+							</div>
+							<h3>Have a coupon? <span id="showcoupon">Click here to enter your code</span></h3>
+							<div class="coupon-checkout-content" id="checkout_coupon">
+								<div class="coupon-info">
+									<form action="#">
+										<p class="checkout-coupon">
+											<input type="text" placeholder="Coupon code">
+											<input type="submit" value="Apply Coupon">
+										</p>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- coupon-area-area-end -->
+		
+		<!-- checkout-area-start -------------------------------------------------------------------------------------->
+		<div class="checkout-area pb-80">
+			<div class="container">
+				<div class="row">
+					<form action="#" method="POST">
+						<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+							<div class="checkbox-form">						
+								<h3>Billing Details</h3>
+								<div class="row">
+									<div class=" col-lg-12">
+										<div class="country-select">
+											<label>Country <span class="required">*</span></label>
+											<select name="country">
+											  <option value="USA">USA</option>
+											  <option value="Canada">Canada</option>
+											</select> 										
+										</div>
+									</div>
+									<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 ">
+										<div class="checkout-form-list">
+											<label>First Name <span class="required">*</span></label>										
+											<input type="text" name="firstName" placeholder="" required>
+										</div>
+									</div>
+									<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+										<div class="checkout-form-list">
+											<label>Last Name <span class="required">*</span></label>										
+											<input type="text" name="lastName" placeholder="" required>
+										</div>
+									</div>
+									<div class="col-lg-12">
+										<div class="checkout-form-list">
+											<label>Company Name</label>
+											<input type="text" name="company"  placeholder="" required>
+										</div>
+									</div>
+									<div class="col-lg-12">
+										<div class="checkout-form-list">
+											<label>Address <span class="required">*</span></label>
+											<input type="text" name="address"  placeholder="Street address" required>
+										</div>
+									</div>
+									<div class="col-lg-12">
+										<div class="checkout-form-list">
+											<label>Address (Line 2)</label>									
+											<input type="text" name="address2" placeholder="Apartment, suite, unit etc. (optional)">
+										</div>
+									</div>
+									<div class="col-lg-12">
+										<div class="checkout-form-list">
+											<label>City <span class="required">*</span></label>
+											<input type="text" name="city"  placeholder="Town / City">
+										</div>
+									</div>
+									<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+										<div class="country-select">
+											<label>State<span class="required">*</span></label>										
+											<select name="state">
+												<option value="AL">AL</option>
+												<option value="AK">AK</option>
+												<option value="AR">AR</option>	
+												<option value="AZ">AZ</option>
+												<option value="CA">CA</option>
+												<option value="CO">CO</option>
+												<option value="CT">CT</option>
+												<option value="DC">DC</option>
+												<option value="DE">DE</option>
+												<option value="FL">FL</option>
+												<option value="GA">GA</option>
+												<option value="HI">HI</option>
+												<option value="IA">IA</option>	
+												<option value="ID">ID</option>
+												<option value="IL">IL</option>
+												<option value="IN">IN</option>
+												<option value="KS">KS</option>
+												<option value="KY">KY</option>
+												<option value="LA">LA</option>
+												<option value="MA">MA</option>
+												<option value="MD">MD</option>
+												<option value="ME">ME</option>
+												<option value="MI">MI</option>
+												<option value="MN">MN</option>
+												<option value="MO">MO</option>	
+												<option value="MS">MS</option>
+												<option value="MT">MT</option>
+												<option value="NC">NC</option>	
+												<option value="NE">NE</option>
+												<option value="NH">NH</option>
+												<option value="NJ">NJ</option>
+												<option value="NM">NM</option>			
+												<option value="NV">NV</option>
+												<option value="NY">NY</option>
+												<option value="ND">ND</option>
+												<option value="OH">OH</option>
+												<option value="OK">OK</option>
+												<option value="OR">OR</option>
+												<option value="PA">PA</option>
+												<option value="RI">RI</option>
+												<option value="SC">SC</option>
+												<option value="SD">SD</option>
+												<option value="TN">TN</option>
+												<option value="TX">TX</option>
+												<option value="UT">UT</option>
+												<option value="VT">VT</option>
+												<option value="VA">VA</option>
+												<option value="WA">WA</option>
+												<option value="WI">WI</option>	
+												<option value="WV">WV</option>
+												<option value="WY">WY</option>
+											</select>		
+										</div>
+									</div>
+									<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+										<div class="checkout-form-list">
+											<label>ZipCode <span class="required">*</span></label>										
+											<input type="number" name="zipcode" placeholder="Postcode / Zip">
+										</div>
+									</div>
+									<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+										<div class="checkout-form-list">
+											<label>Email Address <span class="required">*</span></label>										
+											<input type="email" name="email" placeholder="">
+										</div>
+									</div>
+									<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+										<div class="checkout-form-list">
+											<label>Phone <span class="required">*</span></label>										
+											<input type="text" name="phone" placeholder="">
+										</div>
+									</div>
+									<div class="col-lg-12">
+										<div class="checkout-form-list create-acc">	
+											<input type="checkbox" id="cbox">
+											<label>Create an account?</label>
+										</div>
+										<!-- Create Account option currently unavailable -->
+										<div class="checkout-form-list create-account" id="cbox_info" style="display: none;">
+											<p>Create an account by entering the information below. If you are a returning customer please login at the top of the page.</p>
+											<label>Account password  <span class="required">*</span>
+												<input type="password" placeholder="password">
+											</label>
+										</div>
+									</div>
+									<div class="order-notes">
+										<div class="checkout-form-list">
+											<label>Order Notes</label>
+											<textarea name="note" placeholder="Notes about your order, e.g. special notes for delivery." rows="10" cols="30" id="checkout-mess"></textarea>
+										</div>									
+									</div>							
+								</div>
+								<!--
+								<div class="different-address">
+										<div class="ship-different-title">
+											<h3>
+												<label>Ship to a different address?</label>
+												<input type="checkbox" id="ship-box">
+											</h3>
+										</div>
+									<div class="row" id="ship-box-info" style="display: none;">
+										<div class="col-lg-12">
+											<div class="country-select">
+												<label>Country <span class="required">*</span></label>
+												<select>
+												  <option value="volvo">bangladesh</option>
+												  <option value="saab">Algeria</option>
+												  <option value="mercedes">Afghanistan</option>
+												  <option value="audi">Ghana</option>
+												  <option value="audi2">Albania</option>
+												  <option value="audi3">Bahrain</option>
+												  <option value="audi4">Colombia</option>
+												  <option value="audi5">Dominican Republic</option>
+												   Add only the most relavent ones (Mainly 1st World Countries) 
+												  There may be a library for Countries 
+												</select> 										
+											</div>
+										</div>
+										<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+											<div class="checkout-form-list">
+												<label>First Name <span class="required">*</span></label>										
+												<input type="text" name="firstName" >
+											</div>
+										</div>
+										<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+											<div class="checkout-form-list">
+												<label>Last Name <span class="required">*</span></label>										
+												<input type="text" name="lastName" >
+											</div>
+										</div>
+										<div class="col-lg-12">
+											<div class="checkout-form-list">
+												<label>Company Name</label>
+												<input type="text" name="companyName" >
+											</div>
+										</div>
+										<div class="col-lg-12">
+											<div class="checkout-form-list">
+												<label>Address <span class="required">*</span></label>
+												<input type="text" name="address" placeholder="Street address">
+											</div>
+										</div>
+										<div class="col-lg-12">
+											<div class="checkout-form-list">									
+												<label>Address (Line 2)</label>
+												<input type="text" name="address2" placeholder="Apartment, suite, unit etc. (optional)">
+											</div>
+										</div>
+										<div class="col-lg-12">
+											<div class="checkout-form-list">
+												<label>Town / City <span class="required">*</span></label>
+												<input type="text" name="city" placeholder="City" >
+											</div>
+										</div>
+										<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+											<div class="checkout-form-list">
+												<label>State / County <span class="required">*</span></label>
+												<input type="text" name="state" >
+											</div>
+										</div>
+										<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+											<div class="checkout-form-list">
+												<label>Postcode / Zip <span class="required">*</span></label>										
+												<input type="number" name="zipcode" placeholder="Zipcode" >
+											</div>
+										</div>
+										<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+											<div class="checkout-form-list">
+												<label>Email Address <span class="required">*</span></label>										
+												<input type="email" name="email" >
+											</div>
+										</div>
+										<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+											<div class="checkout-form-list">
+												<label>Phone <span class="required">*</span></label>										
+												<input type="text" name="phone" >
+											</div>
+										</div>								
+									</div>
+								</div> -->
+								
+																					
+							</div>
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+							<div class="your-order">
+								<h3>Your order</h3>
+								<div class="your-order-table table-responsive">
+									<table>
+										<thead>
+											<tr>
+												<th class="product-name">Product</th>
+												<th class="product-total">Total</th>
+											</tr>							
+										</thead>
+										<tbody>
+											<tr class="cart_item">
+												<td class="product-name">
+													Vestibulum suscipit <strong class="product-quantity"> × 1</strong>
+												</td>
+												<td class="product-total">
+													<span class="amount">£165.00</span>
+												</td>
+											</tr>
+											<tr class="cart_item">
+												<td class="product-name">
+													Vestibulum dictum magna	<strong class="product-quantity"> × 1</strong>
+												</td>
+												<td class="product-total">
+													<span class="amount">£50.00</span>
+												</td>
+											</tr>
+										</tbody>
+										<tfoot>
+											<tr class="cart-subtotal">
+												<th>Cart Subtotal</th>
+												<td><span class="amount">£215.00</span></td>
+											</tr>
+											<tr class="shipping">
+												<th>Shipping</th>
+												<td>
+													<ul>
+														<li>
+															<input type="radio">
+															<label>
+																Flat Rate: <span class="amount">£7.00</span>
+															</label>
+														</li>
+														<li>
+															<input type="radio">
+															<label>Free Shipping:</label>
+														</li>
+														<li></li>
+													</ul>
+												</td>
+											</tr>
+											<tr class="order-total">
+												<th>Order Total</th>
+												<td><strong><span class="amount">£215.00</span></strong>
+												</td>
+											</tr>								
+										</tfoot>
+									</table>
+								</div>
+								<div class="payment-method">
+									<div class="payment-accordion">
+										<div class="collapses-group">
+											<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+												<div class="panel panel-default">
+													<div class="panel-heading" role="tab" id="headingOne">
+														<h4 class="panel-title">
+															<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+															  Direct Bank Transfer
+															</a>
+														</h4>
+													</div>
+													<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+														<div class="panel-body">
+															<p>Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order won’t be shipped until the funds have cleared in our account.</p>
+														</div>
+													</div>
+												</div>
+												<div class="panel panel-default">
+													<div class="panel-heading" role="tab" id="headingTwo">
+														<h4 class="panel-title">
+															<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+															  Cheque Payment
+															</a>
+														</h4>
+													</div>
+													<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+														<div class="panel-body">
+															<p>Please send your cheque to Store Name, Store Street, Store Town, Store State / County, Store Postcode.</p>
+														</div>
+													</div>
+												</div>
+												<div class="panel panel-default">
+													<div class="panel-heading" role="tab" id="headingThree">
+														<h4 class="panel-title">
+															<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+															 PayPal <img src="{{url_for('static',filename='img/2.png')}}" alt="payment" />
+															</a>
+														</h4>
+													</div>
+													<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+													  <div class="panel-body">
+															<p>Pay via PayPal; you can pay with your credit card if you don’t have a PayPal account.</p>
+													  </div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="order-button-payment">
+										<input type="submit" value="Place order">
+									</div>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<!-- checkout-area-end -->
+		<!-- brand-area-start -->
+		<div class="brand-area ptb-50">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="brand-active">
+							<div class="single-brand">
+								<a href="#"><img src="{{url_for('static',filename='img/brand/1.png')}}" alt="brand" /></a>
+							</div>
+							<div class="single-brand">
+								<a href="#"><img src="{{url_for('static',filename='img/brand/2.png')}}" alt="brand" /></a>
+							</div>
+							<div class="single-brand">
+								<a href="#"><img src="{{url_for('static',filename='img/brand/3.png')}}" alt="brand" /></a>
+							</div>
+							<div class="single-brand">
+								<a href="#"><img src="{{url_for('static',filename='img/brand/4.png')}}" alt="brand" /></a>
+							</div>
+							<div class="single-brand">
+								<a href="#"><img src="{{url_for('static',filename='img/brand/5.png')}}" alt="brand" /></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- brand-area-end -->
+		<!-- newsletter-area-start -->
+		<div class="newsletter-area ptb-35">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+						<div class="newsletter-text">
+							<h3>Sign Up for Newsletters</h3>
+							<p>Be the First to Know. Sign up for newsletter today</p>
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+						<div class="newsletter-form">
+							<form action="#">
+								<input type="email" placeholder="Enter your email address" />
+								<a href="#">Subscribe</a>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- newsletter-area-end -->
+		<!-- banner-area-2-start -->
+		<div class="banner-area-2">
+			<div class="container">
+				<div class="row">
+					<div class="border-b">
+						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+							<div class="single-banner-2">
+								<div class="banner-2-img">
+									<a href="#"><i class="zmdi zmdi-remote-control-alt zmdi-hc-fw"></i></a>
+								</div>
+								<div class="banner-text-2">
+									<h2>888 345 6789</h2>
+									<p>Free support line!</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+							<div class="single-banner-2">
+								<div class="banner-2-img">
+									<a href="#"><i class="zmdi zmdi-email zmdi-hc-fw"></i></a>
+								</div>
+								<div class="banner-text-2">
+									<h2>Support@plazathemes.com</h2>
+									<p>Orders Support!</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+							<div class="single-banner-2">
+								<div class="banner-2-img">
+									<a href="#"><i class="zmdi zmdi-time zmdi-hc-fw"></i></a>
+								</div>
+								<div class="banner-text-2">
+									<h2>Mon - Fri / 8:00 - 18:00</h2>
+									<p>Working Days/Hours!</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- banner-area-2-end -->
+		<!-- footer-area-start -->
+		
+    </body>
+
+</html>
+{%endblock%}
