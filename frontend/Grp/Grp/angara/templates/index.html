@@ -1,39 +1,38 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>The game</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>The Game</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <!-- Favicon -->
-		<link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
 
-		<!-- all css here -->
-		<!-- bootstrap v3.3.6 css -->
-        <link rel="stylesheet" href="{{url_for('static',filename='css/bootstrap.min.css')}}">
-		<!-- animate css -->
-        <link rel="stylesheet" href="{{url_for('static',filename='css/animate.css')}}">
-		<!-- meanmenu css -->
-        <link rel="stylesheet" href="{{url_for('static',filename='css/meanmenu.min.css')}}">
-		<!-- owl.carousel css -->
-        <link rel="stylesheet" href="{{url_for('static',filename='css/owl.carousel.css')}}">
-		<!-- font-awesome css -->
-        <link rel="stylesheet" href="{{url_for('static', filename='css/font-awesome.min.css')}}">
-		<!-- material-design-iconic-font.css -->
-        <link rel="stylesheet" href="{{url_for('static', filename='css/material-design-iconic-font.css')}}">
-		<!-- chosen.min.css -->
-        <link rel="stylesheet" href="{{url_for('static', filename='css/chosen.min.css')}}">
-		<!-- flexslider.css -->
-        <link rel="stylesheet" href="{{url_for('static',filename='css/flexslider.css')}}">
-		<!-- style css -->
-		<link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
-		<!-- responsive css -->
-        <link rel="stylesheet" href="{{url_for('static', filename='css/responsive.css')}}">
-		<!-- modernizr css -->
-        
-    </head>
+    <!-- all css here -->
+    <!-- bootstrap v3.3.6 css -->
+    <link rel="stylesheet" href="{{url_for('static',filename='css/bootstrap.min.css')}}">
+    <!-- animate css -->
+    <link rel="stylesheet" href="{{url_for('static',filename='css/animate.css')}}">
+    <!-- meanmenu css -->
+    <link rel="stylesheet" href="{{url_for('static',filename='css/meanmenu.min.css')}}">
+    <!-- owl.carousel css -->
+    <link rel="stylesheet" href="{{url_for('static',filename='css/owl.carousel.css')}}">
+    <!-- font-awesome css -->
+    <link rel="stylesheet" href="{{url_for('static', filename='css/font-awesome.min.css')}}">
+    <!-- material-design-iconic-font.css -->
+    <link rel="stylesheet" href="{{url_for('static', filename='css/material-design-iconic-font.css')}}">
+    <!-- chosen.min.css -->
+    <link rel="stylesheet" href="{{url_for('static', filename='css/chosen.min.css')}}">
+    <!-- flexslider.css -->
+    <link rel="stylesheet" href="{{url_for('static',filename='css/flexslider.css')}}">
+    <!-- style css -->
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+    <!-- responsive css -->
+    <link rel="stylesheet" href="{{url_for('static', filename='css/responsive.css')}}">
+    <!-- modernizr css -->
+</head>
 <body>
     <header>
         <!-- header-top-area-start -->
@@ -49,7 +48,6 @@
                         <div class="header-link text-right">
                             <ul>
                                 <li><a href="#">Gift Card</a></li>
-                                <li><a href="#">My Wish List</a></li>
                                 <li><a href="{{url_for('login')}}">My Account</a></li>
                                 <li><a href="{{url_for('register')}}">Sign Up</a></li>						
                                     
@@ -85,7 +83,7 @@
                                     <div class="shopping-cart">
                                         <div class="cart-list">
                                             <div class="cart-img">
-                                                <a href="#" title="Apple Iphone 5s"><img src="{{url_for('static',filename='img/product/07.jpg')}}" alt="mobile" /></a>
+                                                <a href="#" title="Prince of Persia"><img src="{{url_for('static',filename='img/product/07.jpg')}}"/></a>
                                             </div>
                                             <div class="cart-info">
                                                 <h4><a href="#">Prince of Persia</a></h4>
@@ -99,10 +97,10 @@
                                         </div>
                                         <div class="cart-list">
                                             <div class="cart-img">
-                                                <a href="#" title="Apple Iphone 5s"><img src="{{url_for('static',filename='img/product/06.png')}}" alt="mobile" /></a>
+                                                <a href="#" title="PUBG"><img src="{{url_for('static',filename='img/product/06.png')}}"/></a>
                                             </div>
                                             <div class="cart-info">
-                                                <h4><a href="#">Pubg</a></h4>
+                                                <h4><a href="#">PUBG</a></h4>
                                                 <div class="cart-price">
                                                     <span class="price">$50.00</span>
                                                 </div>
@@ -113,7 +111,7 @@
                                         </div>
                                         <div class="mini-cart-total">
                                             <span>Subtotal</span>
-                                            <span class="total-price">$598.00</span>
+                                            <span class="total-price">$110.00</span>
                                         </div>
                                         <div class="cart-button">
                                             <a href="{{url_for('cart')}}" title="Cart">View Cart</a>
@@ -142,10 +140,9 @@
                                 <li ><a href="#">Video Games</i></a>
                                     
                                 </li>
-                                <li class="hidden-sm"><a href="#">Consoles & Hardware</a></li>
+                                <li class="hidden-sm"><a href="#">Consoles &amp; Hardware</a></li>
                                 <li class="hidden-sm"><a href="#">Accessories</a></li>
                                 <li><a href="#">Deals</a></li>
-                                <li><a href="#">Clothing</a></li>
                                 <li><a href="#">About us</a></li>
                                 <li><a href="#">Contact Us</a></li>
                             </ul>
@@ -225,20 +222,13 @@
             </div>
         </div>
         <!-- footer-top-end -->
-        <!-- footer-mid-start -->
-        
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- footer-mid-start -->
         <!-- footer-bottom-start -->
         <div class="footer-bottom ptb-20">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="copy-right-area text-center">
-                            <p>Copyright © 2021 <a href="#">The Game.</a> All rights reserved.</p>
+                            <p>Copyright &copy; 2021 <a href="#">The Game.</a> All rights reserved.</p>
                         </div>
                         
                         </div>
@@ -254,31 +244,30 @@
     </footer>
 
     <!-- all js here -->
-        <script src="{{url_for('static', filename='js/modernizr-2.8.3.min.js')}}"></script>
-		<!-- jquery latest version -->
-        <script src="static/js/jquery-1.12.0.min.js"></script>
-		<!-- bootstrap js -->
-        <script src="static/js/bootstrap.min.js"></script>
-		<!-- owl.carousel js -->
-        <script src="static/js/owl.carousel.min.js"></script>
-		<!-- meanmenu js -->
-        <script src="static/js/jquery.meanmenu.js"></script>
-		<!-- wow js -->
-        <script src="static/js/wow.min.js"></script>
-		<!-- jquery.countdown.min.js -->
-        <script src="static/js/jquery.countdown.min.js"></script>
-		<!-- jquery.counterup.min.js -->
-        <script src="static/js/jquery.counterup.min.js"></script>
-		<!-- waypoints.min.js -->
-        <script src="static/js/waypoints.min.js"></script>
-		<!-- chosen.jquery.min.js -->
-        <script src="static/js/chosen.jquery.min.js"></script>
-		<!-- jquery.flexslider.js -->
-        <script src="static/js/jquery.flexslider.js"></script>
-		<!-- plugins js -->
-        <script src="static/js/plugins.js"></script>
-		<!-- main js -->
-        <script src="static/js/main.js"></script>
+    <script src="{{url_for('static', filename='js/modernizr-2.8.3.min.js')}}"></script>
+    <!-- jquery latest version -->
+    <script src="static/js/jquery-1.12.0.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="static/js/bootstrap.min.js"></script>
+    <!-- owl.carousel js -->
+    <script src="static/js/owl.carousel.min.js"></script>
+    <!-- meanmenu js -->
+    <script src="static/js/jquery.meanmenu.js"></script>
+    <!-- wow js -->
+    <script src="static/js/wow.min.js"></script>
+    <!-- jquery.countdown.min.js -->
+    <script src="static/js/jquery.countdown.min.js"></script>
+    <!-- jquery.counterup.min.js -->
+    <script src="static/js/jquery.counterup.min.js"></script>
+    <!-- waypoints.min.js -->
+    <script src="static/js/waypoints.min.js"></script>
+    <!-- chosen.jquery.min.js -->
+    <script src="static/js/chosen.jquery.min.js"></script>
+    <!-- jquery.flexslider.js -->
+    <script src="static/js/jquery.flexslider.js"></script>
+    <!-- plugins js -->
+    <script src="static/js/plugins.js"></script>
+    <!-- main js -->
+    <script src="static/js/main.js"></script>
 </body>
-
 </html>
