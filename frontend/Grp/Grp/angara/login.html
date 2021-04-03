@@ -2,7 +2,6 @@
 <html class="no-js" lang="en">
    
 
-
 <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -38,7 +37,11 @@
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body class="login">
-        
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
         <!-- header-area-start -->
 		<header>
 			<!-- header-top-area-start -->
@@ -54,7 +57,9 @@
 							<div class="header-link text-right">
 								<ul>
 									<li><a href="gift.html">Gift Card</a></li>
+									<li><a href="wishlist.html">My Wish List</a></li>
 									<li><a href="login.html">My Account</a></li>
+									<li><a href="EmployeeLogin.html">Employee Account</a></li>
 									<li><a href="register.html">Sign In</a></li>						
 										
 									</li>
@@ -149,6 +154,7 @@
 									<li class="hidden-sm"><a href="consolehard.html">Consoles & Hardware</a></li>
 									<li class="hidden-sm"><a href="accesories.html">Accessories</a></li>
 									<li><a href="deal.html">Deals</a></li>
+									<li><a href="Clothing.html">Clothing</a></li>
 									<li><a href="about.html">About us</a></li>
 									<li><a href="contact.html">Contact Us</a></li>
 								</ul>
@@ -188,9 +194,9 @@
 					<div class="col-lg-offset-3 col-lg-6 col-md-offset-3 col-md-6 col-sm-12 col-xs-12">
 						
             <form action="index.html" method="get" class="login-form" style="text-align: center;">
-                <input type="text" id="usernameLogin" placeholder="Username" required><br><br>
+                <input type="text" id="usernameLogin" placeholder="Username"  minlength="8" maxlength="30" required><br><br>
                <b>
-                <input type="password" id="passwordLogin" placeholder="Password" required><br><br>
+                <input type="password" id="passwordLogin" placeholder="Password"  minlength="8" maxlength="30"  required><br><br>
                 <button type="submit" onclick="validate()">Login</button><br>
                 <p class="message">Not Registered? <a href="register.html">Register</a></p>
             </form>
@@ -198,7 +204,7 @@
 			</div>
 
 		</div>
-		
+
 		
 		
 		
@@ -236,8 +242,8 @@
 								</div>
 								<div class="footer-menu">
 									<ul>
-										<li><a href="login.html">My Account</a></li>								
-										<li><a href="contact.html">Contact Us</a></li>
+										<li><a href="#">My Account</a></li>								
+										<li><a href="#">Contact Us</a></li>
 									</ul>
 								</div>
 							</div>
@@ -252,8 +258,8 @@
 								</div>
 								<div class="footer-menu">
 									<ul>
-										<li><a href="about.html">About us</a></li>
-										<li><a href="FAQ.html">FAQ</a></li>
+										<li><a href="#">About us</a></li>
+										<li><a href="#">FAQ</a></li>
 										
 									</ul>
 								</div>
@@ -319,7 +325,6 @@
 		<!-- main js -->
         <script src="js/main.js"></script>
     </body>
-
 
 </html>
 

@@ -4,7 +4,7 @@
 <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>The game</title>
+        <title>The Game</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -35,7 +35,7 @@
 		<!-- modernizr css -->
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
-    <body>
+    <body class="wishlist">
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -76,7 +76,7 @@
 						<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
 							<!-- logo-area-start -->
 							<div class="logo-area">
-								<a href="index.html"><h1 style="color: white;margin-top: 5px"><b>The Game<b></h1></a>
+								<a href="index.html"><img src="img/logo/logos.png" alt="logo" /></a>
 							</div>
 							<!-- logo-area-end -->
 						</div>
@@ -163,58 +163,108 @@
 				</div>
 			</div>
 			<!-- header-bottom-area-end -->
-		</header>
-        <!-- header-area-end -->
-		<!-- banner-area-start -->
-		<!-- banner-area-end -->
-		<!-- slider-area-start -->
-		<div class="slider-area" style="margin-top: 60px">
+		</header><!-- header-area-end -->
+		<!-- header-area-end -->
+		<!-- breadcrumbs-area-strat -->
+		<div class="breadcrumbs-area">
 			<div class="container">
 				<div class="row">
-					<div class="col-lg-12 col-12 col-sm-12" >
-						<!-- slider-main-start -->
-						<div class="slider-main">
-							<div class="slider-active">
-								<div class="single-slider">
-									<div class="slider-img">
-										<a href="#"><img src="img/slider/11.jpg"  class="w-100" style="width: 900px !important" alt="slider" /></a>
-									</div>
-									<div class="slider-text" >
-										<h1 style="color: white;">Prince of Persia </h1>
-										<h2 style="color: white;">20% Off<span><br>Premium</span></h2>
-										<a href="#">Buy Now</a>
-									</div>
-								</div>
-								<div class="single-slider">
-									<div class="slider-img">
-										<a href="#"><img src="img/slider/11.jpg" alt="slider" /></a>
-									</div>
-									<div class="slider-text slider-text-2">
-										<h1 style="color: white;">3d Game </h1>
-										<h3 style="color: white;">Pro versions</h3>
-										<a href="#">Buy Now</a>
-									</div>
-								</div>
-							</div>
+					<div class="col-lg-12">
+						<div class="breadcrumbs-menu">
+							<ul>
+								<li><a href="#">Home<i class="fa fa-angle-right"></i></a></li>
+								<li><a href="#" class="active">wishlist</a></li>
+							</ul>
 						</div>
-						<!-- slider-main-end -->
-						<!-- banner-right-start -->
-						
-						<!-- banner-right-end -->
-					</div>	
+					</div>
 				</div>
 			</div>
 		</div>
-		<!-- slider-area-end -->
-		<!-- onsaleproduct-area-start -->
-		<!-- onsaleproduct-area-end -->
-		<!-- banner-area-start -->
+		<!-- breadcrumbs-area-end -->
+		<!-- entry-header-area-start -->
+		<div class="entry-header-area pt-80">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="entry-header-title">
+							<h2>Wishlist</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- entry-header-area-end -->
+		<!-- cart-main-area-start -->
+		<div class="cart-main-area pb-80">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="wishlist-content">
+							<form action="#">
+								<div class="wishlist-title">
+									<h2>My wishlist on Zonker Wordpress</h2>
+								</div>
+								<div class="wishlist-table table-responsive">
+									<table>
+										<thead>
+											<tr>
+												<th class="product-remove">
+													<span class="nobr">Remove</span>
+												</th>
+												<th class="product-thumbnail">Image</th>
+												<th class="product-name">Product Name</th>
+												<th class="product-price">Unit Price </th>
+												<th class="product-stock-stauts">Stock Status </th>
+												<th class="product-subtotal">add-to-cart </th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td class="product-remove"><a href="#">×</a></td>
+												<td class="product-thumbnail"><a href="#"><img src="img/cart/1.jpg" alt="man" /></a></td>
+												<td class="product-name"><a href="#">Vestibulum suscipit</a></td>
+												<td class="product-price"><span class="amount">£165.00</span></td>
+												<td class="product-stock-status"><span class="wishlist-in-stock">In Stock</span></td>
+												<td class="product-add-to-cart"><a href="#"> Add to Cart</a></td>
+											</tr>
+											<tr>
+												<td class="product-remove"><a href="#">×</a></td>
+												<td class="product-thumbnail"><a href="#"><img src="img/cart/2.jpg" alt="man" /></a></td>
+												<td class="product-name"><a href="#">Vestibulum dictum magna</a></td>
+												<td class="product-price"><span class="amount">£50.00</span></td>
+												<td class="product-stock-status"><span class="wishlist-in-stock">In Stock</span></td>
+												<td class="product-add-to-cart"><a href="#"> Add to Cart</a></td>
+											</tr>
+										</tbody>
+										<tfoot>
+											<tr>
+												<td colspan="6">
+													<div class="wishlist-share">
+														<h4 class="wishlist-share-title">Share on:</h4>
+														<ul>
+															<li><a href="#" class="facebook"><i class="fa fa-facebook"></i></a></li>
+															<li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+															<li><a class="pinterest" href="#"><i class="fa fa-dribbble"></i></a></li>
+															<li><a class="googleplus" href="#"><i class="fa fa-google-plus"></i></a></li>
+															<li><a class="email" href="#"><i class="fa fa-instagram"></i></a></li>
+														</ul>
+													</div>
+												</td>
+											</tr>
+										</tfoot>
+									</table>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- cart-main-area-end -->
+		<!-- brand-area-start -->
 		
 		
-		
-		<!-- banner-area-2-end -->
-		<!-- footer-area-start -->
-		<footer>
+	<footer>
 			<!-- footer-top-start -->
 			<div class="footer-top ptb-60">
 				<div class="container">
@@ -226,10 +276,8 @@
 									<a href="#"><h5 style="color: Black;">The Game</h5></a>
 								</div>
 								<div class="footer-test">
-									<p></p>
-									<p></p>
-									<p></p>
-									<h3>:</h3>
+									
+									<h3>Contact info:</h3>
 									<h4>Houston, Texas.</h4>
 									<ul>
 										<li><a href="#"><i class="fa fa-twitter"></i></a></li>
@@ -301,6 +349,7 @@
 			</div>
 			<!-- footer-bottom-end -->
 		</footer>
+		
 		<!-- footer-area-end -->
 		
 		
