@@ -1,6 +1,7 @@
 <!doctype html>
 <html class="no-js" lang="en">
     
+
 <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -34,13 +35,47 @@
         <link rel="stylesheet" href="css/responsive.css">
 		<!-- modernizr css -->
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     </head>
     <body>
-        <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+<script>
+	
+	$(document).ready(function(){
+ $("#exampleModal").modal('show');
+    });
 
-        <!-- Add your site or application content here -->
+</script>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Subscribe To Our NewLetter</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       
+       <form>
+       	<center>
+       	EMAIL: <input type="email" placeholder="enter your email" >
+       </center>
+       </form>
+
+      </div>
+      <div class="modal-footer">
+      <center><button type="button" class="btn btn-primary" data-dismiss="modal">Subscribe</button></center>
+      </div>
+    </div>
+  </div>
+</div>
+    <!--[if lt IE 8]>
+           
+        <[endif]-->
+
+        
         <!-- header-area-start -->
 		<header>
 			<!-- header-top-area-start -->
@@ -56,9 +91,7 @@
 							<div class="header-link text-right">
 								<ul>
 									<li><a href="gift.html">Gift Card</a></li>
-									<li><a href="wishlist.html">My Wish List</a></li>
 									<li><a href="login.html">My Account</a></li>
-									<li><a href="EmployeeLogin.html">Employee Account</a></li>
 									<li><a href="register.html">Sign In</a></li>						
 										
 									</li>
@@ -153,7 +186,6 @@
 									<li class="hidden-sm"><a href="consolehard.html">Consoles & Hardware</a></li>
 									<li class="hidden-sm"><a href="accesories.html">Accessories</a></li>
 									<li><a href="deal.html">Deals</a></li>
-									<li><a href="Clothing.html">Clothing</a></li>
 									<li><a href="about.html">About us</a></li>
 									<li><a href="contact.html">Contact Us</a></li>
 								</ul>
@@ -226,10 +258,8 @@
 									<a href="#"><h5 style="color: Black;">The Game</h5></a>
 								</div>
 								<div class="footer-test">
-									<p></p>
-									<p></p>
-									<p></p>
-									<h3>:</h3>
+									
+									<h3>Contact info:</h3>
 									<h4>Houston, Texas.</h4>
 									<ul>
 										<li><a href="#"><i class="fa fa-twitter"></i></a></li>
@@ -250,8 +280,8 @@
 								</div>
 								<div class="footer-menu">
 									<ul>
-										<li><a href="#">My Account</a></li>								
-										<li><a href="#">Contact Us</a></li>
+										<li><a href="login.html">My Account</a></li>								
+										<li><a href="contact.html">Contact Us</a></li>
 									</ul>
 								</div>
 							</div>
@@ -266,8 +296,8 @@
 								</div>
 								<div class="footer-menu">
 									<ul>
-										<li><a href="#">About us</a></li>
-										<li><a href="#">FAQ</a></li>
+										<li><a href="about.html">About us</a></li>
+										<li><a href="FAQ.html">FAQ</a></li>
 										
 									</ul>
 								</div>
@@ -330,5 +360,6 @@
 		<!-- main js -->
         <script src="js/main.js"></script>
     </body>
+
 
 </html>
