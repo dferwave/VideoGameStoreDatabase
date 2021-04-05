@@ -25,34 +25,94 @@
 				<div class="col-lg-12">
 					<div class="login-title text-center mb-30">
 						<h2>Sign Up</h2>
-												
-						<form action="#" class ="register-form" method="POST" style="margin-bottom: 10px;">
-							<input type="text" name="usernameRegister" id="usernameRegister" placeholder="Username" required><br><br>
-							<input type="text" name="firstName" id="firstName" placeholder="First Name" required><br><br>
-							<input type="text" name="lastName" id="lastName" placeholder="Last Name" required><br><br>
-							<input type="email" name="emailRegister" id="emailRegister" placeholder="Email" required> <br><br>
-							<input type="number" name="phone" id="phone" placeholder="Phone" min="0" required> <br><br>
-							<input type="text" name="address1" id="address1" placeholder="Address" required> <br><br>
-							<input type="text" name="address2" id="address2" placeholder="Address (Line 2)"> <br><br>
-							<input type="text" name="city" id="city" placeholder="City" required> <br><br>
-							<input type="text" name="state" id="state" placeholder="State" required> <br><br>
-							<input type="number" name="zipcode" id="zipcode" placeholder="Zipcode" required> <br><br>
-							<input type="password" name="passwordRegister" id="passwordRegister" placeholder="Password" required><br><br>
-							<input type="password" name="passwordConfirm" id="passwordConfirm" placeholder="Confirm Password" required><br><br>
-							<input type="checkbox" name="newsletter" id="newsletter_subsciption">
-							<label for="newsletter_subsciption">Would you like to sign up for newsletters?</label> <br><br>
-							<button type="submit" onclick="validate()">Register</button>
-							<p class="message">Already Registered? <a href="{{url_for('login')}}">Login</a></p>
-						</form>
 					</div>
 				</div>
-
-			<script src ='http://code.jquery.com/jquery-3.2.1.min.js'></script>
-			<script>
-				$('.message a').click(function(){
-					$('form').animate({height: "toggle", opacity: "toggle"}, "slow");});
-			//submit buttons (Register & Login) need to validate input (if valid, submit the form)
-			</script>
+				<div class="col-lg-offset-3 col-lg-6 col-md-offset-3 col-md-6 col-sm-12 col-xs-12">
+					<form action="#" class ="login-form" method="POST" style="text-align: center; margin-bottom: 10px;">
+						<label for="usernameRegister" align="left" style="display: block">Username:</label>
+						<input type="text" name="usernameRegister" id="usernameRegister" placeholder="Username" required><br>
+						<label for="passwordRegister" align="left" style="display: block">Password:</label>
+						<input type="password" name="passwordRegister" id="passwordRegister" placeholder="Password" required><br>
+						<label for="passwordConfirm" align="left" style="display: block">Confirm Password:</label>
+						<input type="password" name="passwordConfirm" id="passwordConfirm" placeholder="Repeat Password" required><br>
+						<label for="firstName" align="left" style="display: block">First Name:</label>
+						<input type="text" name="firstName" id="firstName" placeholder="First Name" required><br>
+						<label for="lastName" align="left" style="display: block">Last Name:</label>
+						<input type="text" name="lastName" id="lastName" placeholder="Last Name" required><br>
+						<label for="emailRegister" align="left" style="display: block">Email:</label>
+						<input type="email" name="emailRegister" id="emailRegister" placeholder="Email" required><br>
+						<label for="phone" align="left" style="display: block">Phone:</label>
+						<input type="number" name="phone" id="phone" placeholder="Phone" min="0" required><br>
+						<label for="address1" align="left" style="display: block">Address:</label>
+						<input type="text" name="address1" id="address1" placeholder="Address" required><br>
+						<label for="address2" align="left" style="display: block">Address (Line 2):</label>
+						<input type="text" name="address2" id="address2" placeholder="Address (Line 2)"><br>
+						<label for="city" align="left" style="display: block">City:</label>
+						<input type="text" name="city" id="city" placeholder="City" required><br>
+						<label for="state" align="left" style="display: block">State:</label>
+						<select name="state" id="state" required>
+							<option value="AL">AL</option>
+							<option value="AK">AK</option>
+							<option value="AR">AR</option>	
+							<option value="AZ">AZ</option>
+							<option value="CA">CA</option>
+							<option value="CO">CO</option>
+							<option value="CT">CT</option>
+							<option value="DC">DC</option>
+							<option value="DE">DE</option>
+							<option value="FL">FL</option>
+							<option value="GA">GA</option>
+							<option value="HI">HI</option>
+							<option value="IA">IA</option>	
+							<option value="ID">ID</option>
+							<option value="IL">IL</option>
+							<option value="IN">IN</option>
+							<option value="KS">KS</option>
+							<option value="KY">KY</option>
+							<option value="LA">LA</option>
+							<option value="MA">MA</option>
+							<option value="MD">MD</option>
+							<option value="ME">ME</option>
+							<option value="MI">MI</option>
+							<option value="MN">MN</option>
+							<option value="MO">MO</option>	
+							<option value="MS">MS</option>
+							<option value="MT">MT</option>
+							<option value="NC">NC</option>	
+							<option value="NE">NE</option>
+							<option value="NH">NH</option>
+							<option value="NJ">NJ</option>
+							<option value="NM">NM</option>			
+							<option value="NV">NV</option>
+							<option value="NY">NY</option>
+							<option value="ND">ND</option>
+							<option value="OH">OH</option>
+							<option value="OK">OK</option>
+							<option value="OR">OR</option>
+							<option value="PA">PA</option>
+							<option value="RI">RI</option>
+							<option value="SC">SC</option>
+							<option value="SD">SD</option>
+							<option value="TN">TN</option>
+							<option value="TX">TX</option>
+							<option value="UT">UT</option>
+							<option value="VT">VT</option>
+							<option value="VA">VA</option>
+							<option value="WA">WA</option>
+							<option value="WI">WI</option>	
+							<option value="WV">WV</option>
+							<option value="WY">WY</option>
+						</select><br>
+						<label for="zipcode" align="left" style="display: block">Zipcode:</label>
+						<input type="number" name="zipcode" id="zipcode" placeholder="Zipcode" required><br><br>
+						
+						<label for="newsletter_subsciption">Would you like to sign up for newsletters?:&nbsp;&nbsp;</label>
+						<input type="checkbox" name="newsletter" id="newsletter_subsciption"><br><br><br>
+						<button type="submit" onclick="validate()">Register</button><br><br>
+						<p class="message">Already Registered? <a href="{{url_for('login')}}">Login</a></p>
+					</form>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
@@ -60,19 +120,13 @@
 {%endblock%}
 
 <script>
-        function validate() {
-			var username = document.getElementById("usernameRegister").value;
-            var useremail = document.getElementById("emailRegister").value;
-            var password = document.getElementById("passwordRegister").value;
-            if (useremail == null || useremail == "") {
-                alert("Please enter the email.");
-                return false;
-            }
-            if (password == null || password == "") {
-                alert("Please enter the password.");
-                return false;
-            }
-            alert('Signup successful');
-            
-        } 
+	function validate() {
+		let password = document.getElementById("passwordRegister").value;
+		let passwordConfirm = document.getElementById("passwordConfirm").value;
+		if (password === passwordConfirm) {
+			alert("Passwords must match");
+			return false;
+		}
+		alert('Signup successful');
+	}
 </script>

@@ -5,10 +5,8 @@ from user.models import Member
 
 @app.route("/register/", methods=['GET','POST'])
 def register():
-
     if request.method == 'POST':
         newMember = Member()
-        
         return newMember.register()
     else:
         return render_template("register.html")
@@ -17,7 +15,7 @@ def register():
 @app.route("/login/", methods=['GET','POST'])
 def login():
     if request.method == 'POST':
-        memberr = Member()
-        return memberr.login()
+        member = Member()
+        return member.login()
     else:
         return render_template("login.html")
