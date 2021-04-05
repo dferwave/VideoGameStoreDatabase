@@ -3,13 +3,16 @@ import mysql.connector
 
 
 db = mysql.connector.connect(  #This function connects to mySQL DB
-        host="localhost", 
+        host="localhost",
         user="root",
-        passwd="123456789", # the password you set for the DB
-        database="online_store" #name of the local DB
+        password="FerDWav_50", # the password you set for the DB
+        database="Videogamestore" #name of the local DB
     )
-print("connected successfully....")
-mycursor = db.cursor(buffered=True)
+# print("connected successfully....")
+# mycursor = db.cursor()
+# mycursor.execute("SHOW DATABASES")
+# for x in mycursor:
+#   print(x)
 
 app = Flask(__name__)
 #################################################################
@@ -17,7 +20,7 @@ from user import routes
 
 @app.route("/", methods=['GET','POST'])
 def home():   # This is the only function the works as of March 21, 2021. It gets the data from the register form and enter into the database
-        return render_template("home.html")
+    return render_template("home.html")
 
 @app.route("/user/") # user home page when logged in
 def user():
@@ -54,7 +57,7 @@ def checkout():
             
         }
 
-        query = "INSERT INTO customers (country,fname,lname,email,company,addressLine1,addressLine2,city,state,zipcode,phone,note) VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)"
+        query = "INSERT INTO customer (country,fname,lname,email,company,addressLine1,addressLine2,city,state,zipcode,phone,note) VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)"
         args = (customer['country'],customer['fname'],customer['lname'],customer['email'],customer['company'],customer['address'],customer['address2'],customer['city'],customer['state'],customer['zipcode'],customer['phone'],customer['note'])
         mycursor.execute(query, args)
         db.commit()
