@@ -29,8 +29,6 @@ CREATE TABLE `CUSTOMER` (
     `zipcode` int NOT NULL,
     `newsletter_subscription` BOOL NOT NULL, -- Default 0 ?
 
-    `member` BOOL NOT NULL, -- Default 0 ?
-    -- `joined_on` date,
     `reward_points` int NOT NULL, -- Default 0 ?, will trigger a pop-up to user when it's >= 100 for options
     PRIMARY KEY (`customer_id`)
 ) DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;

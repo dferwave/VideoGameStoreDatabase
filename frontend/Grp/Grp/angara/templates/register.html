@@ -1,76 +1,67 @@
 {%extends "index.html"%}
 {% block content%}
 
-<div>
-    
-
-    <body class=" login register">
-        <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-
-        <!-- Add your site or application content here -->
-        <!-- header-area-start -->
-		<!-- breadcrumbs-area-strat -->
-		<div class="breadcrumbs-area">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12">
-						<div class="breadcrumbs-menu">
-							<ul>
-								<li><a href="{{url_for('home')}}">Home<i class="fa fa-angle-right"></i></a></li>
-								<li><a href="#" class="active">register</a></li>
-							</ul>
-						</div>
+<div class="login register">
+	<!-- breadcrumbs-area-strat -->
+	<div class="breadcrumbs-area">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="breadcrumbs-menu">
+						<ul>
+							<li><a href="{{url_for('home')}}">Home<i class="fa fa-angle-right"></i></a></li>
+							<li><a href="#" class="active">register</a></li>
+						</ul>
 					</div>
 				</div>
 			</div>
 		</div>
-		<!-- breadcrumbs-area-end -->
-		<!-- user-login-area-start -->
-		<div class="user-login-area ptb-80">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12">
-						<div class="login-title text-center mb-30">
-							<h2>Sign Up</h2>
-														
-            <form action="#" class ="register-form" method="POST" style="margin-bottom: 10px;">
-                <input type="text" name="usernameRegister" id="usernameRegister" placeholder="Username" required><br><br>
-				<input type="text" name="firstName" id="firstName" placeholder="First Name" required><br><br>
-				<input type="text" name="lastName" id="lastName" placeholder="Last Name" required><br><br>
-                <input type="email" name="emailRegister" id="emailRegister" placeholder="Email" required> <br><br>
-				<input type="number" name="phone" id="phone" placeholder="Phone" required> <br><br>
-                <input type="password" name="passwordRegister" id="passwordRegister" placeholder="Password" required><br><br>
-                <input type="password" name="passwordConfirm" id="passwordConfirm" placeholder="Confirm Password" required><br><br>
-                
-               
-            
-                <button type="submit" onclick="validate()">Register</button>
-                <p class="message">Already Registered? <a href="{{url_for('login')}}">Login</a></p>
-            </form>
-						</div>
+	</div>
+	<!-- breadcrumbs-area-end -->
+	<!-- user-login-area-start -->
+	<div class="user-login-area ptb-80">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="login-title text-center mb-30">
+						<h2>Sign Up</h2>
+												
+						<form action="#" class ="register-form" method="POST" style="margin-bottom: 10px;">
+							<input type="text" name="usernameRegister" id="usernameRegister" placeholder="Username" required><br><br>
+							<input type="text" name="firstName" id="firstName" placeholder="First Name" required><br><br>
+							<input type="text" name="lastName" id="lastName" placeholder="Last Name" required><br><br>
+							<input type="email" name="emailRegister" id="emailRegister" placeholder="Email" required> <br><br>
+							<input type="number" name="phone" id="phone" placeholder="Phone" min="0" required> <br><br>
+							<input type="text" name="address1" id="address1" placeholder="Address" required> <br><br>
+							<input type="text" name="address2" id="address2" placeholder="Address (Line 2)"> <br><br>
+							<input type="text" name="city" id="city" placeholder="City" required> <br><br>
+							<input type="text" name="state" id="state" placeholder="State" required> <br><br>
+							<input type="number" name="zipcode" id="zipcode" placeholder="Zipcode" required> <br><br>
+							<input type="password" name="passwordRegister" id="passwordRegister" placeholder="Password" required><br><br>
+							<input type="password" name="passwordConfirm" id="passwordConfirm" placeholder="Confirm Password" required><br><br>
+							<input type="checkbox" name="newsletter" id="newsletter_subsciption">
+							<label for="newsletter_subsciption">Would you like to sign up for newsletters?</label> <br><br>
+							<button type="submit" onclick="validate()">Register</button>
+							<p class="message">Already Registered? <a href="{{url_for('login')}}">Login</a></p>
+						</form>
 					</div>
+				</div>
 
-				<script src ='http://code.jquery.com/jquery-3.2.1.min.js'></script>
-   			 <script>
-   				 $('.message a').click(function(){
-       				 $('form').animate({height: "toggle", opacity: "toggle"}, "slow");});
-    			//submit buttons (Register & Login) need to validate input (if valid, submit the form)
-    			</script>
-			</div>
+			<script src ='http://code.jquery.com/jquery-3.2.1.min.js'></script>
+			<script>
+				$('.message a').click(function(){
+					$('form').animate({height: "toggle", opacity: "toggle"}, "slow");});
+			//submit buttons (Register & Login) need to validate input (if valid, submit the form)
+			</script>
 		</div>
-
-		
-		
-		
-    </body>
-
+	</div>
 </div>
+
 {%endblock%}
+
 <script>
         function validate() {
-	var username = document.getElementById("usernameRegister").value;
+			var username = document.getElementById("usernameRegister").value;
             var useremail = document.getElementById("emailRegister").value;
             var password = document.getElementById("passwordRegister").value;
             if (useremail == null || useremail == "") {
