@@ -34,6 +34,10 @@ def admin(admin):
 def dashboard(admin):
     return render_template("admin/dashboard.html")
 
+@app.route("/search/", methods=['GET','POST'])
+def search():
+    return render_template("search.html")
+
 @app.route("/cart/", methods=['GET','POST'])
 def cart():
     return render_template("cart.html")

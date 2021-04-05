@@ -2,7 +2,7 @@
 
 {% block content %}
 
-<div class="cart">
+<div class="search">
     <!-- breadcrumbs-area-strat -->
     <div class="breadcrumbs-area">
         <div class="container">
@@ -11,7 +11,7 @@
                     <div class="breadcrumbs-menu">
                         <ul>
                             <li><a href="{{url_for('home')}}">Home<i class="fa fa-angle-right"></i></a></li>
-                            <li><a href="#" class="active">cart</a></li>
+                            <li><a href="#" class="active">Search</a></li>
                         </ul>
                     </div>
                 </div>
@@ -19,20 +19,19 @@
         </div>
     </div>
     <!-- breadcrumbs-area-end -->
-    <!-- entry-header-area-start -->
+        <!-- entry-header-area-start -->
     <div class="entry-header-area pt-80">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="entry-header-title">
-                        <h2>Cart</h2>
+                        <h2>Search</h2>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- entry-header-area-end -->
-    <!-- cart-main-area-start -->
     <div class="cart-main-area pb-80">
         <div class="container">
             <div class="row">
@@ -47,7 +46,7 @@
                                         <th class="product-price">Price</th>
                                         <th class="product-quantity">Quantity</th>
                                         <th class="product-subtotal">Total</th>
-                                        <th class="product-remove">Remove</th>
+                                        <th class="product-add">Add to Cart</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -60,7 +59,7 @@
                                         <td class="product-price"><span class="amount">$60.00</span></td>
                                         <td class="product-quantity"><input type="number" value="1" min="1"></td>
                                         <td class="product-subtotal">$60.00</td>
-                                        <td class="product-remove"><a href="#"><i class="fa fa-times"></i></a></td>
+                                        <td class="product-add"><a href="#"><i class="fa fa-check"></i></a></td>
                                     </tr>
                                     <tr>
                                         <td class="product-thumbnail"><a href="#"><img src="{{url_for('static',filename='img/cart/06.png')}}" alt="product image" /></a></td>
@@ -68,7 +67,7 @@
                                         <td class="product-price"><span class="amount">$50.00</span></td>
                                         <td class="product-quantity"><input type="number" value="1" min="1"></td>
                                         <td class="product-subtotal">$50.00</td>
-                                        <td class="product-remove"><a href="#"><i class="fa fa-times"></i></a></td>
+                                        <td class="product-add"><a href="#"><i class="fa fa-check"></i></a></td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -79,58 +78,8 @@
                     <div class="col-lg-8 col-md-8 col-sm-6 col-xs-12">
                         <div class="buttons-cart mb-30">
                             <ul>
-                                <li><a href="#">Update Cart</a></li>
-                                <li><a href="{{url_for('home')}}">Continue Shopping</a></li>
+                                <li><a href="{{url_for('cart')}}">See Cart</a></li>
                             </ul>
-                        </div>
-                        <div class="coupon">
-                            <h3>Coupon</h3>
-                            <p>Enter your coupon code if you have one.</p>
-                            <form action="#">
-                                <input type="text" placeholder="Coupon code">
-                                <a href="#">Apply Coupon</a>
-                            </form>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12"> <!-- hidden if no items in cart -->
-                        <div class="cart_totals">
-                            <h2>Cart Totals</h2>
-                            <table>
-                                <tbody>
-                                    <tr class="cart-subtotal">
-                                        <th>Subtotal</th>
-                                        <td>
-                                            <span class="amount">$110.00</span>
-                                        </td>
-                                    </tr>
-                                    <tr class="shipping">
-                                        <th>Shipping</th>
-                                        <td>
-                                            <ul>
-                                                <li>
-                                                    <input type="checkbox"  value="address" name="address">
-                                                    <label>Flat Rate: <span class="amount">$7.00</span></label>
-                                                </li>
-                                                <li>
-                                                    <input type="checkbox" value="address" name="address">
-                                                    <label>Free Shipping:</label>
-                                                </li>
-                                            </ul>
-                                        </td>
-                                    </tr>
-                                    <tr class="order-total">
-                                        <th>Total</th>
-                                        <td>
-                                            <strong>
-                                                <span class="amount">$110.00</span>
-                                            </strong>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <div class="wc-proceed-to-checkout">
-                                <a href="{{url_for('checkout')}}">Proceed to Checkout</a>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -138,4 +87,5 @@
         </div>
     </div>
 </div>
+
 {% endblock %}

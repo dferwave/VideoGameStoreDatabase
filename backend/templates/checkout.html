@@ -2,7 +2,7 @@
 
 {% block content%}
 
-    <body class="cart checkout">
+    <div class="cart checkout">
 		<!-- breadcrumbs-area-strat -->
 		<div class="breadcrumbs-area">
 			<div class="container">
@@ -10,7 +10,7 @@
 					<div class="col-lg-12">
 						<div class="breadcrumbs-menu">
 							<ul>
-								<li><a href="#">Home<i class="fa fa-angle-right"></i></a></li>
+								<li><a href="{{url_for('home')}}">Home<i class="fa fa-angle-right"></i></a></li>
 								<li><a href="#" class="active">checkout</a></li>
 							</ul>
 						</div>
@@ -506,7 +506,6 @@
 		<!-- banner-area-2-end -->
 		<!-- footer-area-start -->
 		
-    </body>
+    </div>
 
-</html>
 {%endblock%}
