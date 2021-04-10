@@ -178,6 +178,8 @@
 				</div>
 			</div>
 		</div>
+		
+
 		<!-- breadcrumbs-area-end -->
 		<!-- shop-main-area-start -->
 		
@@ -189,7 +191,47 @@
 		
 		<!-- banner-area-2-end -->
 		<!-- footer-area-start -->
+
+		<style h1{text-align:center;} >
+			  
+		</style>
+		<form action ="gift"style="margin: 70px 50px 75px;>
+			<div>
+                  <label for="Name">Name</label><br>
+				  <input type="text" placeholder="Name" id="name"  required> 
+				  <br>
+
+	               <label for="Card Number">Card Number</label><br>
+				   <input id ="Card Number" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" autocomplete="cc-number" maxlength="19" placeholder="xxxx xxxx xxxx xxxx"  minlength="16" maxlength="16" required> 
+				   <br>
+
+
+				   <label for="Expire Date">Expire Date</label><br>
+				   <input type="text" placeholder="Expire Date" id="Expire Date"  required> 
+				   
+				   <br>
+
+				   <label for="CVV">CVV</label><br>
+				   <input type="text" placeholder="CVV" id="CVV"  maxlength="3" required> 
+
+				   <br>
+
+                  
+
+
+				   
+			</div>
+
+			<label for="Amount">Amount</label><br>
+			<input type="number" placeholder="Amount" id="Amount"  required> 
+			<br>
+
+			<button>Generate Code</button>
+
+		</form>
+		
 	<footer>
+
 			<!-- footer-top-start -->
 			<div class="footer-top ptb-60">
 				<div class="container">
