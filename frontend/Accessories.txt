@@ -1,0 +1,52 @@
+1.Name:External Hard Drive
+  Type:Accesories
+  Description: This provide storage device for which item could be stored
+  Unit Price:79
+  FileName:External-Hard-Drive-2TB-Assortment.jpg  
+
+2.Name:Grip for Nintendo
+  Type:Accesories
+  Description: This is used for contolling racing car or live game which is more realistic.
+  Unit Price:56
+  FileName:Grip-for-Nintendo-Wii-Assortment.jpg
+
+
+3.Name: XXL Cloth Prism keyboard
+  Type:Accesories
+  Description: This is a mechanical keyboard which is ued to conrol the pc and require it to be connected to work.
+  Unit Price:67
+  FileName:QCK-XXXL-Cloth-Prism-RGB-Gaming-Mousepad.jpg
+
+4. Name:Rock Bnad Guitar
+   Type:Accesories
+   Description: This is used in church service or music consert for the instrumentalist.
+   Unit Price:100
+   FileName:Rock-Band-Wireless-Guitar-for-Nintendo-Wii.jpg
+
+5. Name:Optix G27C4W-C Curved Monitor
+   Type:Accesories
+   Description:This is a desktop monior used with connection with other acessiores to provide connection.
+   Unit Price:234
+   FileName: Optix-G27C4W-Class-FHD-FreeSync-Curved-Gaming-Monitor-27-in.jpg
+   
+              
+6. Name:Nintendo Wii USB Adaptor
+   Type:Accessories
+   Description: This is ued for storage of items. It is 250GB storage device.
+   Amount:43
+   FileName:Nintendo-DS-and-Wii-USB-Wi-Fi-Adapter.png
+
+7.Name:Live Wireless Headset
+  Type:Accessories
+  Description:This is used for listening to music which is wirless. It is connect to blutooth at 2.4GHZ Sec.
+  Amount:76
+  FileName:Live-Wireless-Headset-for-Xbox-360-Assortment.jpg
+
+8.Name:Wired Microphone
+  Type:Accesories
+  Description: This require connect to a mixer to actually use it.
+  Amount:78
+  FileName:Wired-Microphone-for-Xbox-360-Assortment.jpg
+
+
+
