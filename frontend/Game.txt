@@ -1,0 +1,123 @@
+1.Name:Call of Duty
+  Type:VideoGame
+  Description: Product Description Prepare to go dark, Modern Warfare(R) is back! The stakes have never been higher as players take on the role of lethal Tier One operators in a heart-racing saga that will affect the global balance of power. Call of Duty®    
+  Unit Price:25
+  FileName:Call of Duty.jpg  
+
+2.Name: Apex-Legend
+  Type:VideoGame
+  Description: On the fringes of known space, you’ll find the Apex Games – a battle royale where teams of misfits and outlaws fight for the title of Apex Champion. Win, and they call you a Legend.
+  Unit Price:14
+  FileName:Apex_Legends_Lifeline_Edition.jpg
+
+
+3.Name: FIFA 20
+  Type:VideoGame
+  Description: Powered by Frostbite™*, EA SPORTS™ FIFA 20 for the PlayStation 4, Xbox One, and PC brings two sides of The World’s Game to life - the prestige of the professional stage and an all-new authentic street football experience in EA SPORTS VOLTA. 
+  Unit Price:4
+  FileName:FIFE 20.jpg
+
+4. Name:Fortnite
+   Type:VideoGame
+   Description:Genius comes in many forms - whether you're dangerously funny, creating havoc with wild plants, or flooding the island with your best intentions; it often comes along with a companion: madness. Become everyone’s nemesis with The Last Laugh bundle! Includes: The Joker Outfit, Laugh Riot Back Bling, Bad Joke Harvesting Tool, The Joker's Revenge Harvesting Tool, Pick a Card Contrail, Poison Ivy Outfit, Back Bloom Back Bling, Ivy Axe Harvesting Tool, Midas Rex Outfit, Midas Crest Back Bling, Kingmaker Harvesting Tool, and 1,000 V-Bucks.
+   Unit Price:7
+   FileName:Fortnite.jpg
+
+5. Name:GTA
+   Type:VideoGame
+   Description:A young street hustler, a retired bank robber and a terrifying psychopath must pull off a series of dangerous heists to survive in a ruthless city in which they can trust nobody, least of all each other.
+   Unit Price:23
+   FileName: GTA V.jpg
+   
+              
+6. Name: Madden
+   Type:VideoGame
+   Description: 
+   Amount:7
+   FileName:
+
+7.Name:Mass-Effect-Legendary
+  Type:VideoGame
+  Description:Put your skills to the test with Madden NFL 21 on PS4! A new generation of players are leaving their mark on the NFL. Will you rise to the occasion?
+  Amount:6
+  FileName:Madden-NFL-20.jpg
+
+8.Name:Teeken
+  Type:VideoGame
+  Description: Raise your fists and get ready for the ultimate battle on the next generation of home consoles. Powered by the Unreal Engine 4, the storied fighting franchise returns for another round in Tekken 7.
+  Amount:9
+  FileName:Tekken 7.jpg
+
+9.Name:The invisible Hours for Oculus
+  Type:VideoGame
+  Description:A group of strangers receive a curious invitation from enigmatic inventor Nikola Tesla, offering each of them the chance to make amends for their darkest wrongdoings.
+  Amount:5
+  FileName:The-Invisible-Hours-for-Oculus-Rift.jpg
+
+10. Name:Naruto to Boruto Shinobi Striker
+    Type:VideoGame
+    Description:With more than 13 million NARUTO SHIPPUDENTM: Ultimate Ninja® STORM games sold worldwide, this series has established itself among the pinnacle of Anime & Manga adaptations to videogames!
+    Amount:9
+    FileName:Naruto-to-Boruto-Shinobi-Striker.jpg
+
+11. Name:Rocksmith 2014
+    Type:VideoGame
+    Description:Rocksmith 2014 Edition is the fastest way to learn guitar*. Plug in any real guitar or bass and join over 1 million people who have learned with the award-winning Rocksmith method.
+    Amount:12
+    FileName:Rocksmith-2014-Edition-No-Cable-Included.jpg
+
+12. Name:Need for Speed Hot Pursuit
+    Type:VideoGame
+    Description:Need for Speed Hot Pursuit players will experience the thrill of the chase and the rush of the escape as they play through full careers as both a cop and a racer – solo or connected. The blistering speeds, brutal busts and heart-stopping getaways are all connected via Need for Speed Autolog.
+    Amount:4
+    FileName:Need-for-Speed-Hot-Pursuit.png
+
+13. Name:R.U.SE
+    Type:VideoGame
+    Description:R.U.S.E™ is a one-of-a-kind real-time strategy game that allows players to bluff their enemies to lead their nation to victory, controlling the action using views that range seamlessly from the heart of the battlefield to the full theatre of war. 
+    Amount:49
+    FileName:R.U.SE.png
+
+14. Name:Cyberpunk 2077
+    Type:VideoGame
+    Description:Cyberpunk 2077 is an open-world, action-adventure story set in Night City, a megalopolis obsessed with power, glamour and body modification.
+    Amount:23
+    FileName:Cyberpunk-2077.png
+
+15. Name:Supreme Commander
+    Type:VideoGame
+    Description:Experience brutal battles on a massive scale! In SUPREME COMMANDER 2, developed by Gas Powered Games, players will wage war by creating enormous customizable armies and experimental war machines that can change the balance of power at any given moment.
+    Amount:54
+    FileName:Supreme-Commander-2.png
+
+16.Name:Red Dead Redemption
+    Type:VideoGame
+    Description:Winner of over 175 Game of the Year Awards and recipient of over 250 perfect scores, Red Dead Redemption 2 is an epic tale of honor and loyalty at the dawn of the modern age.
+    Amount:36
+    FileName:Red-Dead-Redemption-2.png
+
+17. Name:Age-of-Empires-Definitive-Edition
+    Type:VideoGame
+    Description:Age of Empires, the pivotal RTS that launched a 20-year legacy, returns in definitive form for Windows 10 PCs
+    Amount:54
+    FileName:Age-of-Empires-Definitive-Edition.png
+    
+18. Name:Spec-Ops-The-Line
+    Type:VideoGame
+    Description:It's been 6 months since Dubai was wiped off the map by a cataclysmic sandstorm. Thousands of lives were lost, including those of American soldiers sent to evacuate the city. 
+    Amount:12
+    FileName:Spec-Ops-The-Line.png
+
+19. Name:Lord-of-the-Rings-War-in-the-North
+    Type:VideoGame
+    Description: Lord of the Rings: War in the North is a co-op Action RPG that immerses you and your friends in a brutal new chapter in the War of the Ring. 
+    Amount:43
+    FileName:Lord-of-the-Rings-War-in-the-North.png
+
+20. Name:Tom-Clancys-Rainbow-Six-Siege
+    Type:VideoGame
+    Description:Rainbow Six Siege is an intense, new approach to the first-person shooter experience. Choose from a variety of unique Counter-Terrorist Operators and master their abilities as you lead your team through tense, thrilling, and destructive team-based combat.
+    Amount:43
+    FileName:Tom-Clancys-Rainbow-Six-Siege.png
+    
+
