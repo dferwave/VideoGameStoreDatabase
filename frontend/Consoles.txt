@@ -1,0 +1,71 @@
+Play Station 1, console, NULL, $69.99, PS1.jpg
+Play Station 2, console, NULL, $169.99, PS2.jpg
+Play Station 3, console, The PlayStation 3 (PS3) is a home video game console developed by Sony Computer Entertainment.  It was the first console to use Blu-ray Disc as its primary storage medium.[11] The console was the first PlayStation to integrate social gaming services, including the PlayStation Network, as well as the first to be controllable from a handheld console, through its remote connectivity with PlayStation Portable and PlayStation Vita., $195.00, PS3.jpg
+Play Station 4, console, NULL , $299.99, PS4.jpg
+
+Play Station 4 pro, console, 1TB Console
+-DUALSHOCK®4 Wireless Controller
+-DUALSHOCK®4 USB charging cable, $399, PS4 pro.jpg
+
+
+
+Play Station 5, console, Harness the power of a custom CPU, GPU, and SSD with Integrated I/O that rewrite the rules of what a PlayStation® console can do. 
+- Enjoy smooth and fluid high frame rate gameplay at up to 120fps for compatible games, with support for 120Hz output on 4K displays. 
+- Discover a deeper gaming experience with support for haptic feedback, adaptive triggers, and 3D Audio technology. 
+- Ultra-High Speed SSD Maximize your play sessions with near instant load times for installed PS5™ games.
+$499, PS5.jpg
+
+
+
+Xbox 360, console, NULL, $169.99, Xbox 360.jpg
+
+Xbox 360 E, console, NULL, $234.99, Xbox360E.jpg
+
+Xbox one, console, NULL, $299.99, Xbox one.jpg
+
+
+
+
+Xbox one S, console, With the Xbox One S, you can play your favorite games, including Xbox 360 classics, on a 40% smaller console. Experience high-quality video with HDR 
+technology, premium audio, and fast, reliable online gaming with friends. Stream 4K video and access all your favorite entertainment through apps like on YouTube, Netflix and 
+Amazon Video, and watch UHD Blu-ray movies in stunning 4K Ultra HD. Own the Xbox One S 1TB Console and get access to over 2,200 games that you can only play on Xbox One.,
+$289.99, XboxOneS.jpg
+
+
+
+Xbox one X, console, The Xbox One X does what no console has done before: native 4K HDR gaming. However, while games look stunning – with a fantastic level of detail accentuated by the console's HDR support – their larger file sizes will mean that the 1TB hard drive fills up fast., $389.99, XboxOneX.jpg
+
+
+
+Xbox Series X, console, Introducing Xbox Series X, the fastest, most powerful Xbox ever. Play thousands of titles from four generations of consoles—all games look and play best on Xbox Series X. At the heart of Series X is the Xbox Velocity Architecture, which pairs a custom SSD with integrated software for faster,
+streamlined gameplay with significantly reduced load times. Seamlessly move between multiple games in a flash with Quick Resume. Explore rich new worlds and enjoy the action like never before with the unmatched 12 teraflops of raw graphic processing power. Enjoy 4K gaming at up to 120 frames per second, advanced 3D 
+spatial sound, and more. , $499.99, XboxSeriesX.jpg
+
+
+New Nintendo 3DS XL, console, The Nintendo NEW 3DS XL features face Tracking 3D, The C Stick, Built-in amiibo Support, and more, $149.99, Nintendo3DSXL.jpg
+
+Nintendo Switch - Neon Red/Neon Blue Joy-Con, console, Introducing Nintendo Switch, the new home video game system from Nintendo. In addition to providing single and multiplayer thrills at home, the Nintendo Switch system can be taken on the go so players can enjoy a full home Nintendo Switch console experience anytime, anywhere.
+The mobility of a handheld is now added to the power of a home gaming system, with unprecedented new play styles brought to life by the two new Nintendo Switch Joy-Con controllers., $299.99, NintendoSwitch.jpg.
+
+Nintendo Switch lite Turquoise, console, Introducing Nintendo Switch™ Lite, a new version of the Nintendo Switch system that’s optimized for personal, handheld play. Nintendo Switch Lite is a small and light Nintendo Switch system at a great price. With a built-in +Control Pad, and a sleek, unibody design, Nintendo Switch Lite is great for on-the-go gaming., $184.99, NintendoSwitchLiteT.jpg
+
+Nintendo Switch lite Yellow, console, Introducing Nintendo Switch™ Lite, a new version of the Nintendo Switch system that’s optimized for personal, handheld play. Nintendo Switch Lite is a small and light Nintendo Switch system at a great price. With a built-in +Control Pad, and a sleek, unibody design, Nintendo Switch Lite is great for on-the-go gaming., $184.99, NintendoSwitchLiteY.jpg
+
+Nintendo Switch lite Coral, console, Introducing Nintendo Switch™ Lite, a new version of the Nintendo Switch system that’s optimized for personal, handheld play. Nintendo Switch Lite is a small and light Nintendo Switch system at a great price. With a built-in +Control Pad, and a sleek, unibody design, Nintendo Switch Lite is great for on-the-go gaming., $184.99, NintendoSwitchLiteC.jpg
+
+Nintendo Wii, console, NULL, $126.95, NintendoWii.jpg
+
+Nintendo Wii U, console, NULL, $259.99, NintendoWiiU.jpg
+
+Game Boy, console, NULL, $129.99, GameBoy.jpb
+
+
+
+
+
+
+
+
+
+
+
